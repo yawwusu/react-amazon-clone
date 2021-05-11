@@ -1,3 +1,9 @@
+# REACT-AMAZON-CLONE
+
+Amazon Clone with React + Firebase
+
+### It features: user authentication, cart functionality, routing and the look and feel of Amazon. Enjoy!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
