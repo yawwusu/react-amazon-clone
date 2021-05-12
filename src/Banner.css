@@ -1,0 +1,15 @@
+.Banner {
+  object-fit: contain;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Banner-image {
+  width: 100%;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.3)
+  );
+}
