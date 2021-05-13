@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from "./Header";
-import Banner from "./Banner";
+import Home from "./Home";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           </Route>
           <Route path="/">
             <Header />
-            <Banner />
+            <Home />
           </Route>
         </Switch>
       </div>

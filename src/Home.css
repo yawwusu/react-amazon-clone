@@ -1,15 +1,24 @@
-.Banner {
+.Home {
   object-fit: contain;
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.Banner-image {
+.Home-bannerImage {
   width: 100%;
   -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.3)
+    rgba(0, 0, 0, 0)
   );
+  z-index: -1;
+  margin-bottom: -10rem;
+}
+
+.Home-row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
 }
