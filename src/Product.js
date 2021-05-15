@@ -23,8 +23,7 @@ function Product({ id, title, image, price, rating }) {
       <div className="Product-info">
         <p>{title}</p>
         <p className="Product-price">
-          <medium>€ </medium>
-          <strong>{parseFloat(price).toFixed(2)}</strong>
+          <strong>€ {parseFloat(price).toFixed(2)}</strong>
         </p>
         <div className="Product-rating">
           {Array(rating)
