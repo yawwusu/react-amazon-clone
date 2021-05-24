@@ -4,10 +4,16 @@ import { Link } from "react-router-dom";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import "./Header.css";
 import { useStateValue } from "./StateProvider";
+import auth from "./lib/auth";
 
 function Header() {
-  const [{ basket }] = useStateValue();
-  console.log("basket", basket);
+  const [{ basket, user }] = useStateValue();
+
+  const logout = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
 
   return (
     <nav className="Header">
@@ -26,10 +32,12 @@ function Header() {
 
       <div className="Header-nav">
         <Link to="/login" className="Header-options">
-          <span className="Header-option-1">Hello Yaw</span>
-          <span className="Header-option-2">Sign In</span>
+          <span className="Header-option-1">Hello {user?.email}</span>
+          <span className="Header-option-2" onClick={logout}>
+            {!user ? "Sign In" : "Sign Out"}
+          </span>
         </Link>
-        <Link to="/" className="Header-options">
+        <Link to={!user && "/login"} className="Header-options">
           <span className="Header-option-1">Return</span>
           <span className="Header-option-2">& Orders</span>
         </Link>
