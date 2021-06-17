@@ -2,7 +2,7 @@
 
 Amazon Clone with React + Firebase
 
-### It features: user authentication, cart functionality, routing and the look and feel of Amazon. Enjoy!
+### It features: user authentication, cart functionality, routing and the look and feel of Amazon. Test it out [here](https://react--clone-17bb5.firebaseapp.com/)!
 
 # Getting Started with Create React App
 
